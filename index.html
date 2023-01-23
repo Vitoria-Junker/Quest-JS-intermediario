@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Formulário com validação</title>
+    <link rel="stylesheet" href="/src/img/reset.css">
+    <link rel="stylesheet" href="src/img/style.css">
+</head>
+<body>
+<main>
+    <div class="text">
+        <h2>FICOU COM DÚVIDA? <Br>
+            NOS MANDE UMA MENSAGEM!
+        </h2>
+
+        <p> caso tenha ficado com qualquer dúvida <br>
+         basta nos mandar uma mensagem e <br>
+         entraremos em contato em menos de 24h.
+        </p>
+    </div>
+
+    <form id="form">
+        <div class="form"> 
+
+            <input id="nome" type="text" value="" class="input dados required" oninput="nameValidate()" placeholder="Nome completo *">
+            <span class="span-required">campo obrigatório</span> 
+
+            <input id="email" type="text" value="" class="input dados required" oninput="emailValidate()"placeholder="Email *"> 
+            <span class="span-required">campo obrigatório</span>
+
+            <input id="telefone" type="text" value="" class="input dados required" oninput="telefoneValidate()" placeholder="Telefone *"> 
+            <span class="span-required">campo obrigatório</span>
+
+            <textarea id="message" type="text" value="" class="input mensagem required" oninput="mensagemValidate()" placeholder="Mensagem *"></textarea>
+            <span class="span-required">campo obrigatório</span>
+    
+            <h3>*campos obrigatórios</h3>
+    
+            <button type="submit" class="send">Enviar</button>
+    
+        </div>
+
+    </form>  
+</main>
+    
+<script src="index.js"></script>
+</body>
+</html>
